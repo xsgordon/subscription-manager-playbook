@@ -1,0 +1,22 @@
+---
+- include_vars: pools.yaml
+- name: Attach OpenShift subscription pool
+  shell: subscription-manager attach --pool "{{rhsm_openshift_pool}}"
+  always_run: false
+  become: true
+- name: Enable rhel-7-server-extras-rpms
+  shell: subscription-manager repos --enable 'rhel-7-server-extras-rpms'
+  always_run: false
+  become: true
+- name: Enable rhel-7-server-ose-3.9-rpms
+  shell: subscription-manager repos --enable 'rhel-7-server-ose-3.9-rpms'
+  always_run: false
+  become: true
+- name: Enable rhel-7-fastdatapath-rpms
+  shell: subscription-manager repos --enable 'rhel-7-fast-datapath-rpms'
+  always_run: false
+  become: true
+- name: Enable rhel-7-server-ansible-2.4-rpms
+  shell: subscription-manager repos --enable 'rhel-7-server-ansible-2.4-rpms'
+  always_run: false
+  become: true

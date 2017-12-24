@@ -1,0 +1,4 @@
+---
+- import_tasks: subscribe.yaml
+- import_tasks: attach.yaml
+- import_tasks: update.yaml

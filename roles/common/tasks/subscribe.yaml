@@ -1,0 +1,8 @@
+---
+- include_vars: rhsm.yaml
+- redhat_subscription:
+    state: present
+    username: "{{rhsm_username}}"
+    password: "{{rhsm_password}}"
+    autosubscribe: true
+  become: true

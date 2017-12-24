@@ -1,0 +1,49 @@
+---
+- name: Install wget
+  package:
+      name: wget
+      state: latest
+- name: Install git
+  package:
+      name: git
+      state: latest
+- name: Install net-tools
+  package:
+      name: net-tools
+      state: latest
+- name: Install bind-utils
+  package:
+      name: bind-utils
+      state: latest
+- name: Install iptables-services
+  package:
+      name: iptables-services
+      state: latest
+- name: Install bridge-utils
+  package:
+      name: bridge-utils
+      state: latest
+- name: Install bash-completion
+  package:
+      name: bash-completion
+      state: latest
+- name: Install kexec-tools
+  package:
+      name: kexec-tools
+      state: latest
+- name: Install sos
+  package:
+      name: sos
+      state: latest
+- name: Install psacct
+  package:
+      name: psacct
+      state: latest
+- name: Install atomic-openshift-utils
+  package:
+      name: atomic-openshift-utils
+      state: latest
+- name: Install docker
+  package:
+      name: docker-1.13.1
+      state: present

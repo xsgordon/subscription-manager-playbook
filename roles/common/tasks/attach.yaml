@@ -1,0 +1,9 @@
+---
+- name: Disable all repositories by default
+  shell: subscription-manager repos --disable '*'
+  always_run: false
+  become: true
+- name: Enable rhel-7-server-rpms
+  shell: subscription-manager repos --enable 'rhel-7-server-rpms'
+  always_run: false
+  become: true

@@ -1,0 +1,4 @@
+*.retry
+/roles/common/vars/rhsm.yaml
+/roles/openshift/vars/pools.yaml
+hosts
