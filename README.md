@@ -27,4 +27,4 @@ Recommended: Encrypt your RHSM information using Ansible vault:
 
 ## Execution
 
-$ ansible-playbook subscription-manager-playbook.yaml --ask-vault-pass
+    $ ansible-playbook subscription-manager-playbook.yaml --ask-vault-pass
